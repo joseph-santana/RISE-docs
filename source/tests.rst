@@ -2,13 +2,30 @@
 RISE Tests
 ==========
 
+Image Stacking and Noise Reduction
+==================================
+
+The stacking image software that RISE (and RAPID) use to generate stacked science and reference images is `AWAICgen`_.
+AWAICgen, originally named AWAIC (A WISE Astronomical Image Coadder), is a software developed at caltech for use on the Wide-Field Infrared Explorer (WISE).
+
+We found that stacking with AWAICgen reduced the noise in the stacked image by a factor of :math:`\sqrt{N}`, where N is the number of Images in the stack.
+
+.. figure:: /images/stack_noise.png
+   :width: 400px
+
+   This is the caption that appears under the picture.
+
+.. _AWAICgen_: https://arxiv.org/abs/0812.4310
+
 PSF & Photometry
 ================
 
 Effective PSF
 -------------
 
-We tested building an Effective Point Spread Function (EPSF) from field stars within the stacked image using photutils.EPSFBuilder
+We tested building an Effective Point Spread Function (EPSF) from field stars within the stacked image using `photutils.psf.EPSFBuilder`_.
+
+.. _`photutils.psf.EPSFBuilder`: https://photutils.readthedocs.io/en/stable/api/photutils.psf.EPSFBuilder.html
 
 date
 ^^^^
