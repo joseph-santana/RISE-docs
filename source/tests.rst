@@ -14,7 +14,9 @@ We found that stacking with AWAICgen reduced the noise in the stacked image by r
 .. figure:: /images/stack_noise.png
    :width: 400px
 
-   Background cutouts and RMS values of a single OU24 image, and 2, 4, and 8 depth stacks. The noise reduction roughly follows :math:`\sqrt{N}`.
+   Background cutouts and RMS values of a single OU24 image,
+   and 2, 4, and 8 depth stacks. The noise reduction roughly
+   follows :math:`\sqrt{N}`.
 
 .. _AWAICgen: https://arxiv.org/abs/0812.4310
 
