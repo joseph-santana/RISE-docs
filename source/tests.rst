@@ -33,18 +33,15 @@ We tested building an Effective Point Spread Function (EPSF) from field stars wi
 .. figure:: images/bkgsubbed_stacked_image_frac_error_stacked_epsf_os1x.png
     :width: 500px
 
-    Overampling Factor = 1. Fractional error in measured PSF photometry in field stars versus magntiude of field star. 
-
 .. figure:: images/bkgsubbed_stacked_image_frac_error_stacked_epsf_os2x.png
     :width: 500px
-
-    Overampling Factor = 2. Fractional error in measured PSF photometry in field stars versus magntiude of field star. 
 
 .. figure:: images/bkgsubbed_stacked_image_frac_error_stacked_epsf_os3x.png
     :width: 500px
 
 
-    Overampling Factor = 3. Fractional error in measured PSF photometry in field stars versus magntiude of field star. 
+    Overampling Factor = 1, 2, & 3. Fractional error in measured PSF photometry in field stars versus magntiude of field star.
+    Grey points are all used field stars, red points are the mean in 0.5 magnitude bins.
 
 
 
@@ -63,6 +60,8 @@ With the launch of Roman and the beginning of commissioning, we hope to test PSF
     :width: 500px
 
     Rotated and averaged Galsim PSFs. Galsim PSFs generated to mimic the PSFs used to generate OU24 simulations.
+    Grey points are all used field stars, red points are the mean in 0.5 magnitude bins.
+
 
 date
 ^^^^
