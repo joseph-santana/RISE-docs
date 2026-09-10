@@ -21,7 +21,7 @@ The code can be found on the `RISE GitHub repository`_.
 
    ../pipeline_structure
    ../pipeline_products
-   ../test.rst
+   ../tests
 
 
 
