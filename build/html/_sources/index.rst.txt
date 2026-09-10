@@ -6,13 +6,13 @@
 RISE Documentation
 ==================
 
-This the documentation page for the RISE (Roman hIgh-redshift transient SciencE) pipeline!
+This is the documentation page for the RISE (Roman hIgh-redshift transient SciencE) pipeline!
 
 The RISE pipeline aims to build on the `RAPID`_ pipeline by providing stacked products as science inputs for image differencing.
 
-The code can be found on the `RISE Github Repository`_.
+The code can be found on the `RISE GitHub repository`_.
 
-.. _RISE Github Repository: https://github.com/joseph-santana/RISE
+.. _RISE GitHub repository: https://github.com/joseph-santana/RISE
 .. _RAPID: https://caltech-ipac-rapid.readthedocs.io/en/latest/index.html
 
 .. toctree::
