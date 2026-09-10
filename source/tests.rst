@@ -32,12 +32,16 @@ We tested building an Effective Point Spread Function (EPSF) from field stars wi
 
 .. figure:: images/bkgsubbed_stacked_image_frac_error_stacked_epsf_os1x.png
 
+    Overampling Factor = 1. Fractional error in measured PSF photometry in field stars versus magntiude of field star. 
+
 .. figure:: images/bkgsubbed_stacked_image_frac_error_stacked_epsf_os2x.png
+
+    Overampling Factor = 2. Fractional error in measured PSF photometry in field stars versus magntiude of field star. 
 
 .. figure:: images/bkgsubbed_stacked_image_frac_error_stacked_epsf_os3x.png
 
-    Fractional error in measured PSF photometry in field stars versus magntiude of field star. 
-    EPSF built using EPSFBuiler and oversampling factors of 1, 2, and 3.
+    Overampling Factor = 3. Fractional error in measured PSF photometry in field stars versus magntiude of field star. 
+
 
 
 date
