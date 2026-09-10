@@ -27,9 +27,3 @@ The ``/rise/`` directory contains all the RISE products, which can be found here
 
 The ``/awaicgen_outputs/`` directory contains stacked products such as a coverage map, an uncertainty image, and the science image.
 
-This is a test.
-
-This is another test.
-
-This is the third test.
-
