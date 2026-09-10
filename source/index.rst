@@ -12,11 +12,7 @@ The RISE pipeline aims to build on the `RAPID`_ pipeline by providing stacked pr
 
 The code can be found on the `RISE GitHub repository`_.
 
-this is a test
-
-this is another test
-
-this is a third test
+I got rid of the other tests, here's my last one
 
 .. _RISE GitHub repository: https://github.com/joseph-santana/RISE
 .. _RAPID: https://caltech-ipac-rapid.readthedocs.io/en/latest/index.html
