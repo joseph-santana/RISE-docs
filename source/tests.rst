@@ -13,11 +13,16 @@ We tested building an Effective Point Spread Function (EPSF) from field stars wi
 date
 ^^^^
 
+On this date, we found...
+
 Averaged PSF
 ------------
 
 We tested rotating and averaging PSF models. Without Roman data, we tested Galsim psf models that were generated to mimic the PSFs used to generate the OpenUniverse2024 dataset.
 With the launch of Roman and the beginning of commissioning, we hope to test PSF models from the Roman SOC on real Roman data.
+
+date
+^^^^
 
 Comparison
 ----------
