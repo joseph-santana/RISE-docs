@@ -14,6 +14,8 @@ The code can be found on the `RISE GitHub repository`_.
 
 this is a test
 
+this is another test
+
 .. _RISE GitHub repository: https://github.com/joseph-santana/RISE
 .. _RAPID: https://caltech-ipac-rapid.readthedocs.io/en/latest/index.html
 
