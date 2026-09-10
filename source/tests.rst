@@ -59,6 +59,11 @@ Averaged PSF
 We tested rotating and averaging PSF models. Without Roman data, we tested Galsim psf models that were generated to mimic the PSFs used to generate the OpenUniverse2024 dataset.
 With the launch of Roman and the beginning of commissioning, we hope to test PSF models from the Roman SOC on real Roman data.
 
+.. figure:: images/frac_error_averaged_psf.png
+    :width: 500px
+
+    Rotated and averaged Galsim PSFs. Galsim PSFs generated to mimic the PSFs used to generate OU24 simulations.
+
 date
 ^^^^
 
