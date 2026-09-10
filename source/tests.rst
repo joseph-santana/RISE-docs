@@ -15,7 +15,7 @@ We found that stacking with AWAICgen reduced the noise in the stacked image by a
 
    This is the caption that appears under the picture.
 
-.. _AWAICgen_: https://arxiv.org/abs/0812.4310
+.. _AWAICgen: https://arxiv.org/abs/0812.4310
 
 PSF & Photometry
 ================
