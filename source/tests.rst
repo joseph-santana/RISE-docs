@@ -87,7 +87,7 @@ We tested the order in which we stack and subtract. More info on the two stackin
    :width: 500
 
 .. |img2| image:: /images/091126/sfft_bar.png
-   :width: 5000
+   :width: 500
 
 .. list-table:: 
    :widths: 500 500
