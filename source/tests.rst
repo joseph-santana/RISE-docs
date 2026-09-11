@@ -82,7 +82,7 @@ We tested the order in which we stack and subtract. More info on the two stackin
     SNR vs Truth Mag
 
 .. list-table:: 
-   :widths: 50 50
+   :widths: 250 250
    :align: center
 
    * - .. figure:: images/091116/zogy_bar.png
