@@ -83,7 +83,7 @@ We tested the order in which we stack and subtract. More info on the two stackin
 
 |zogy_bar| |sfft_bar|
 
-*Detections* :math:`> 5\sigma`\ *. Number of detections compared to truth in 0.25 magntiude bins*
+*Sextractor detections* :math:`> 5\sigma`\ *. Number of detections in each stacking scheme compared to truth in 0.25 magntiude bins*
 
 .. |zogy_bar| image:: /images/091126/zogy_bar.png
    :width: 500
@@ -93,7 +93,7 @@ We tested the order in which we stack and subtract. More info on the two stackin
 
 |zogy_completeness| |sfft_completeness|
 
-*Detections* :math:`> 5\sigma`\ *. Completeness in 0.5 magnitude bins*
+*Sextractor detections* :math:`> 5\sigma`\ *. Completeness in each stacking scheme in 0.5 magnitude bins*
 
 .. |zogy_completeness| image:: /images/091126/zogy_completeness.png
    :width: 500
