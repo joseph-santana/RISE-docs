@@ -83,7 +83,7 @@ We tested the order in which we stack and subtract. More info on the two stackin
 
 |img1| |img2|
 
-*Detections :math:`\>`5`\sigma`
+*Detections :math:`\>5\sigma`
 
 .. |img1| image:: /images/091126/zogy_bar.png
    :width: 500
