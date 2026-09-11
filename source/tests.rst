@@ -84,13 +84,13 @@ We tested the order in which we stack and subtract. More info on the two stackin
 |img1| |img2|
 
 .. |img1| image:: /images/091126/zogy_bar.png
-   :width: 250
+   :width: 500
 
 .. |img2| image:: /images/091126/sfft_bar.png
-   :width: 250
+   :width: 5000
 
 .. list-table:: 
-   :widths: 50 50
+   :widths: 500 500
    :align: center
    :class: borderless-image-table
 
