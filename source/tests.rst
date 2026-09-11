@@ -84,6 +84,7 @@ We tested the order in which we stack and subtract. More info on the two stackin
 .. list-table:: 
    :widths: 50 50
    :align: center
+   :class: borderless-image-table
 
    * - .. figure:: /images/091126/zogy_bar.png
           :alt: First Image
