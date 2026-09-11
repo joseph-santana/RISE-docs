@@ -89,30 +89,10 @@ We tested the order in which we stack and subtract. More info on the two stackin
 .. |img2| image:: /images/091126/sfft_bar.png
    :width: 500
 
-.. list-table:: 
-   :widths: 500 500
-   :align: center
-   :class: borderless-image-table
+.. figure:: 
+    :width: 0px
 
-   * - .. figure:: /images/091126/zogy_bar.png
-          :alt: First Image
-
-          This is the first caption.
-
-     - .. figure:: /images/091126/sfft_bar.png
-          :alt: Second Image
-
-          This is the second caption.
-
-.. figure:: /images/091126/zogy_bar.png
-    :width: 250px
-    :align: left    
-
-.. figure:: /images/091126/sfft_bar.png
-    :width: 250px
-    :align: right
-
-
+    Test Caption
 
 Stack then Sub
 --------------
