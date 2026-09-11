@@ -77,15 +77,15 @@ Stacking Scheme
 We tested the order in which we stack and subtract. More info on the two stacking methods can be found `here (Link to pipeline_strcture.rst)`.
 
 .. figure:: /images/091126/snr_fig.png
-    :width: 500px
+    :width: 1000px
 
     SNR vs Truth Mag
 
-.. image:: /images/091126/zogy_bar.png
+.. figure:: /images/091126/zogy_bar.png
     :width: 250px
     :align: left    
 
-.. image:: /images/091126/sfft_bar.png
+.. figure:: /images/091126/sfft_bar.png
     :width: 250px
     :align: right
 
