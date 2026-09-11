@@ -81,24 +81,24 @@ We tested the order in which we stack and subtract. More info on the two stackin
 
     SNR vs Truth Mag
 
-|img1| |img2|
+|zogy_bar| |sfft_bar|
 
 *Detections* :math:`> 5\sigma`\ *. Number of detections compared to truth in 0.25 magntiude bins*
 
-.. |img1| image:: /images/091126/zogy_bar.png
+.. |zogy_bar| image:: /images/091126/zogy_bar.png
    :width: 500
 
-.. |img2| image:: /images/091126/sfft_bar.png
+.. |sfft_bar| image:: /images/091126/sfft_bar.png
    :width: 500
 
-|img1| |img2|
+|zogy_completeness| |sfft_completeness|
 
 *Detections* :math:`> 5\sigma`\ *. Completeness in 0.5 magnitude bins*
 
-.. |img1| image:: /images/091126/zogy_completeness.png
+.. |zogy_completeness| image:: /images/091126/zogy_completeness.png
    :width: 500
 
-.. |img2| image:: /images/091126/sfft_completeness.png
+.. |sfft_completeness| image:: /images/091126/sfft_completeness.png
    :width: 500
 
 Stack then Sub
