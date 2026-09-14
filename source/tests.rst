@@ -135,7 +135,7 @@ We also find that SFFT is less sensitive to the stacking scheme, while for ZOGY,
 S/N vs Truth Magnitude relation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Using our injections on top of galaxies, we find the S/N vs truth magnitudes to be comparable.
+Using our injections atop galaxies, we find the S/N vs truth magnitudes to be comparable.
 We measure S/N using a 4-pixel diameter aperture.
 
 .. figure:: /images/091126/snr_fig.png
