@@ -1,6 +1,6 @@
-==================
-Pipeline Structure
-==================
+=======================
+RISE Pipeline Structure
+=======================
 
 There are currently 2 working versions of the RISE pipeline:
 
