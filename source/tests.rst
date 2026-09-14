@@ -55,10 +55,8 @@ With the launch of Roman and the beginning of commissioning, we hope to test PSF
     Rotated and averaged Galsim PSFs. Galsim PSFs generated to mimic the PSFs used to generate OU24 simulations.
     Grey points are all used field stars, red points are the mean in 0.5 magnitude bins.
 
-We found ...
-
-Stacking Scheme
-===============
+Stacking Scheme Comparisons
+===========================
 
 We tested the order in which we stack and subtract. More info on the two stacking methods can be found `here (Link to pipeline_strcture.rst)`.
 With the recent launch of the Roman Space Telescope, we eagerly await commissioning and early science data to perform analysis on real data.
