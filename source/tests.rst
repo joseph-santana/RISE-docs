@@ -79,17 +79,25 @@ With the recent launch of the Roman Space Telescope, we eagerly await commission
 In the mean time, our tests use the OpenUniverse2024 (OU24) simulated Roman data.
 
 To test the efficacy of the two methods, we injected fake sources with randomly generated magnitudes between 25.5 and 29 into galaxies within the OU24 simualations.
-We ested to see which stacking and subtracting strategy had the least amount of noise, extracted the most sources (highest completeness), and had a fainter S/N vs truth magnitude relation.
+We tested to see which stacking and subtracting strategy had the least amount of noise, extracted the most sources (highest completeness), and had a fainter S/N vs truth magnitude relation.
+
+We find differences in background noise between the stacking schemes and the differencing algorithms to be neglible.
+The difference in background noise between the most and least noisy image is :math:`>1.5%`.
+
+.. figure:: /images/noise_comparison.png
+    :width: 500px
+
+    Noise comparison between varying stacking scheme and differencing algorithm.
+
 To choose candidate galaxies to inject into, we used the truth catalog to identify galaxies that had flux counts above some threshold to exclude particularly faint galaxies.
 We somewhat aribitratily choose this threshold to be 10,000 counts.
-
 We then made a full-coverage cut, using only galaxies that had coverage in all epochs that were used in both the science and reference image stacks.
 
 For these injections atop of galaxies, we use an 8-stack science image, and a 16-stack reference.
 
 |sci_image_injections| |diff_image_injections|
 
-*Science and reference images with galaxy injections marked. Science image is 8-stack depth, and reference image is 16-stack depth.*
+*Science image and SFFT Stack+Sub difference image with galaxy injections marked. Science image is 8-stack depth, and reference image is 16-stack depth.*
 
 .. |sci_image_injections| image:: /images/cropped_sci_image_galaxy_injections.png
    :width: 500
