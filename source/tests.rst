@@ -128,18 +128,22 @@ We find that it varies between between fields and each iteration in a field, tho
 point when residual contamintation dominates over matching to truth injections.
 We also find that SFFT is less-sensitive to the stacking scheme, while for ZOGY, we see a preference for the Stack+Sub method
 
-|match_vs_rad_ex1| |match_vs_rad_ex2| |match_vs_rad_ex3|
+|match_vs_rad_ex1|
+
+|match_vs_rad_ex2|
+
+|match_vs_rad_ex3|
 
 *Number of matched injections vs match radius*
 
 .. |match_vs_rad_ex1| image:: /images/match_vs_rad_iter1.png
-   :width: 330
+   :width: 1000
 
 .. |match_vs_rad_ex2| image:: /images/match_vs_rad_iter4.png
-   :width: 330
+   :width: 1000
 
 .. |match_vs_rad_ex3| image:: /images/match_vs_rad_iter5.png
-   :width: 330
+   :width: 1000
 
 
 S/N vs Truth Magnitude relation
