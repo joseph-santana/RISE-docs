@@ -91,10 +91,10 @@ For these injections atop of galaxies, we use an 8-stack science image, and a 16
 
 *Science and reference images with galaxy injections marked. Science image is 8-stack depth, and reference image is 16-stack depth.*
 
-.. |sci_image_injections| image:: /images/091126/cropped_sci_image_galaxy_injections.png
+.. |sci_image_injections| image:: /images/cropped_sci_image_galaxy_injections.png
    :width: 500
 
-.. |diff_image_injections| image:: /images/091126/cropped_diff_image_galaxy_injections.png
+.. |diff_image_injections| image:: /images/cropped_diff_image_galaxy_injections.png
    :width: 500
 
 For reference, after all cuts, a single field in filter F184 had 513 full-coverage galaxies. To improve statstics on our measurments, we iterated over each field 5 times,
