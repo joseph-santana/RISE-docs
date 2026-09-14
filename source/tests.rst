@@ -107,7 +107,7 @@ For injection positions, we used randomly choosen offset radii between 1.5px = .
 
 We then ran Source Extractor (SExtractor) on the differenced images with these injections, using a 1.5σ threshold across 3 adjacent pixels. We then matched the SExtractor
 catalogs to the injection truth positions. To determine a matching radius between SExtractor coordinates and truth coordinates, we took a look at how the number of sources extracted
-varied as a function of matching radius.
+varied as a function of matching radius. Below are 3 examples of our match radius findings.
 
 |match_vs_rad_ex1|
 
@@ -131,7 +131,6 @@ We interpret this as the point when residual contamination dominates over matchi
 We adopt 0.5px = 0.055" as the match radius for our tests.
 
 We also find that SFFT is less sensitive to the stacking scheme, while for ZOGY, we see a preference for the Stack+Sub method.
-Below are 3 examples of our match radius findings.
 
 S/N vs Truth Magnitude relation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -169,7 +168,7 @@ Below is a completeness plot showing the number of sources extracted from a sing
 
 |zogy_completeness| |sfft_completeness|
 
-*Sextractor detectionsn above 5σ. Completeness in each stacking scheme in 0.5 magnitude bins*
+*Sextractor detections above 5σ. Completeness in each stacking scheme in 0.5 magnitude bins*
 
 .. |zogy_completeness| image:: /images/091126/zogy_completeness.png
    :width: 500
