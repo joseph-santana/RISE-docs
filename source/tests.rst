@@ -85,7 +85,7 @@ We find differences in background noise between the stacking schemes and the dif
 The difference in background noise between the most and least noisy image is :math:`>1.5%`.
 
 .. figure:: /images/noise_comparison.png
-    :width: 500px
+    :width: 700px
 
     Noise comparison between varying stacking scheme and differencing algorithm.
 
