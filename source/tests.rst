@@ -43,13 +43,6 @@ We tested building an Effective Point Spread Function (EPSF) from field stars wi
     Overampling Factor = 1, 2, & 3. Fractional error in measured PSF photometry in field stars versus magntiude of field star.
     Grey points are all used field stars, red points are the mean in 0.5 magnitude bins.
 
-
-
-date
-^^^^
-
-On this date, we found...
-
 Averaged PSF
 ------------
 
@@ -61,13 +54,6 @@ With the launch of Roman and the beginning of commissioning, we hope to test PSF
 
     Rotated and averaged Galsim PSFs. Galsim PSFs generated to mimic the PSFs used to generate OU24 simulations.
     Grey points are all used field stars, red points are the mean in 0.5 magnitude bins.
-
-
-date
-^^^^
-
-Comparison
-----------
 
 We found ...
 
@@ -182,17 +168,13 @@ We find that SFFT outperforms ZOGY when it comes to number of sources extracted,
 .. |sfft_completeness| image:: /images/091126/sfft_completeness.png
    :width: 500
 
-Stack then Sub
---------------
 
-Using the stack then sub method, we found...
+Roman Data
+----------
 
-Sub then Stack
---------------
+With the successful launch of Roman on Aug. 30th, 2026, we eagerly await a chance to test our pipeline on WFI data!
 
-Using the sub then stack method, we found...
-
-
+More details to come.
 
 Limiting Magntiude
 ==================
