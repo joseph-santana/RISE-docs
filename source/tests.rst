@@ -7,12 +7,12 @@ Image Stacking and Noise Reduction
 
 The image stacking software that RISE (and RAPID) use to generate stacked science and reference images is `AWAICgen`_.
 
-AWAICgen, originally named AWAIC (A WISE Astronomical Image Coadder), is a software developed at caltech for use on the Wide-Field Infrared Explorer (WISE).
+AWAICgen, originally named AWAIC (A WISE Astronomical Image Coadder), is a software developed at Caltech for use on the Wide-Field Infrared Explorer (WISE).
 
 We found that stacking with AWAICgen reduced the noise in the stacked image by roughly a factor of :math:`\sqrt{N}`, where N is the number of images used in the stack.
 
 .. figure:: /images/stack_noise.png
-   :width: 400px
+   :width: 700px
 
    Background cutouts and RMS values of a single OU24 image,
    and 2, 4, and 8 depth stacks with the same strech applied.
@@ -38,7 +38,6 @@ We tested building an Effective Point Spread Function (EPSF) from field stars wi
 
 .. figure:: images/bkgsubbed_stacked_image_frac_error_stacked_epsf_os3x.png
     :width: 500px
-
 
     Overampling Factor = 1, 2, & 3. Fractional error in measured PSF photometry in field stars versus magntiude of field star.
     Grey points are all used field stars, red points are the mean in 0.5 magnitude bins.
@@ -78,7 +77,6 @@ The difference in background noise between the most and least noisy image is <1.
     :width: 700px
 
     Noise comparison between varying stacking scheme and differencing algorithm.
-
 
 Injections
 ^^^^^^^^^^
@@ -121,7 +119,7 @@ Below are 3 examples of our match radius findings.
 
 |match_vs_rad_ex3|
 
-*Number of matched injections vs match radius. Dashed horizontal black line marks 0.5px.*
+*Number of matched injections vs match radius. Dashed vertical black line marks 0.5px.*
 
 .. |match_vs_rad_ex1| image:: /images/match_vs_rad_iter1.png
    :width: 800
@@ -132,7 +130,6 @@ Below are 3 examples of our match radius findings.
 .. |match_vs_rad_ex3| image:: /images/match_vs_rad_iter5.png
    :width: 800
 
-
 S/N vs Truth Magnitude relation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -140,15 +137,18 @@ Using our injections on top of galaxies, we find the S/N vs truth magnitudes to 
 We measure S/N using an 4-pixel diameter aperture.
 There is neglible difference between the S/N of a given source between the two stacking methods or the two differencing algorithms.
 
-
 .. figure:: /images/091126/snr_fig.png
     :width: 1000px
 
     SNR vs Truth Magnitude plots for both ZOGY and SFFT difference images
 
+Detection Completeness
+^^^^^^^^^^^^^^^^^^^^^^
 
 Though the S/N vs magnitude relation is comparable between the two schemes and differencing algorithms, the differences in completess are more apparent.
-We find that SFFT outperforms ZOGY when it comes to number of sources extracted, while between both differencing algorithms, Stack+Sub appears to extract more sources. 
+We find that SFFT outperforms ZOGY when it comes to number of sources extracted, while between both differencing algorithms, Stack+Sub appears to extract more sources.
+
+Below is a bar plot showing the number of sources extracted from a single epoch, using Stack+Sub, and using Sub+Stack in 0.25 magnitude bins, compared to truth.
 
 |zogy_bar| |sfft_bar|
 
@@ -160,6 +160,8 @@ We find that SFFT outperforms ZOGY when it comes to number of sources extracted,
 .. |sfft_bar| image:: /images/091126/sfft_bar.png
    :width: 500
 
+Below is a completeness plot showing the number of sources extracted from a single epoch, using Stack+Sub, and using Sub+Stack in 0.5 magnitude bins.
+
 |zogy_completeness| |sfft_completeness|
 
 *Sextractor detections* :math:`> 5\sigma`\ *. Completeness in each stacking scheme in 0.5 magnitude bins*
@@ -170,6 +172,15 @@ We find that SFFT outperforms ZOGY when it comes to number of sources extracted,
 .. |sfft_completeness| image:: /images/091126/sfft_completeness.png
    :width: 500
 
+We see that SFFT outperforms ZOGY in terms of number of sources extracted, while Stack+Sub outperforms Sub+Stack using SFFT.
+The stacking scheme comparison is less clear with ZOGY, though if real Roman behaves like the OU24 simulations,
+RAPID and RISE are both poised to downselect the differencing algorithm to SFFT.
+
+Conclusions
+^^^^^^^^^^^
+
+From these analyses, it is clear that Stack+Sub slightly outperforms Sub+Stack when comes to the number of sources extracted, while SFFT outperforms ZOGY,
+likely due to the undersampled PSF models that are used as inputs in ZOGY
 
 Roman Data
 ----------
@@ -180,8 +191,4 @@ More details to come.
 
 Limiting Magntiude
 ==================
-
-
-
-
 
