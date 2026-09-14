@@ -169,7 +169,7 @@ Below is a completeness plot showing the number of sources extracted from a sing
 
 |zogy_completeness| |sfft_completeness|
 
-*Sextractor detections* :math:`> 5\sigma`\ *. Completeness in each stacking scheme in 0.5 magnitude bins*
+*Sextractor detectionsn above 5σ. Completeness in each stacking scheme in 0.5 magnitude bins*
 
 .. |zogy_completeness| image:: /images/091126/zogy_completeness.png
    :width: 500
