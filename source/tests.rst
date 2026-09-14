@@ -78,6 +78,9 @@ The difference in background noise between the most and least noisy image is <1.
 
     Noise comparison between varying stacking scheme and differencing algorithm.
 
+While Sub+Stack is less noisy than Stack+Sub for both SFFT and ZOGY differences, the difference is largely neglible.
+From this, we take background noise to be unilluminating metric by which we can compare the effectiveness of the different stacking schemes.
+
 Injections
 ^^^^^^^^^^
 
@@ -106,13 +109,6 @@ We then ran Source Extractor (SExtractor) on the differenced images with these i
 catalogs to the injection truth positions. To determine a matching radius between sextractor coordinates and truth coordinates, we took a look at how the number of sources extracted
 chnaged as a function of matching radius.
 
-We find that the number of matched injections varies between fields, and each iteration in a field, though we consistenly find that there is a change in slope around 0.5px = 0.055".
-We interpret this as the point when residual contamintation dominates over matching to truth injections.
-We adopt 0.5px = 0.055" as the match radius for our tests.
-
-We also find that SFFT is less-sensitive to the stacking scheme, while for ZOGY, we see a preference for the Stack+Sub method.
-Below are 3 examples of our match radius findings.
-
 |match_vs_rad_ex1|
 
 |match_vs_rad_ex2|
@@ -130,17 +126,25 @@ Below are 3 examples of our match radius findings.
 .. |match_vs_rad_ex3| image:: /images/match_vs_rad_iter5.png
    :width: 800
 
+We find that the number of matched injections varies between fields, and each iteration in a field, though we consistenly find that there is a change in slope around 0.5px = 0.055".
+We interpret this as the point when residual contamintation dominates over matching to truth injections.
+We adopt 0.5px = 0.055" as the match radius for our tests.
+
+We also find that SFFT is less-sensitive to the stacking scheme, while for ZOGY, we see a preference for the Stack+Sub method.
+Below are 3 examples of our match radius findings.
+
 S/N vs Truth Magnitude relation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Using our injections on top of galaxies, we find the S/N vs truth magnitudes to be comparable.
 We measure S/N using an 4-pixel diameter aperture.
-There is neglible difference between the S/N of a given source between the two stacking methods or the two differencing algorithms.
-
 .. figure:: /images/091126/snr_fig.png
     :width: 1000px
 
     SNR vs Truth Magnitude plots for both ZOGY and SFFT difference images
+
+There is neglible difference between the S/N of a given source between the two stacking methods or the two differencing algorithms.
+From this, we also take S/N to be unilluminating metric by which we can compare the effectiveness of the different stacking schemes.
 
 Detection Completeness
 ^^^^^^^^^^^^^^^^^^^^^^
