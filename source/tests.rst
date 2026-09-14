@@ -57,7 +57,7 @@ With the launch of Roman and the beginning of commissioning, we hope to test PSF
 Stacking Scheme Comparison
 ==========================
 
-We tested the order in which we stack and subtract. More info on the two stacking methods can be found `here (Link to pipeline_strcture.rst)`.
+We tested the order in which we stack and subtract. More info on the two stacking methods can be found on the :doc:`pipeline_structure` page.
 With the recent launch of the Roman Space Telescope, we eagerly await commissioning and early science data to perform analysis on real data.
 In the mean time, our tests use the OpenUniverse2024 (OU24) simulated Roman data.
 
@@ -148,7 +148,7 @@ Detection Completeness
 Though the S/N vs magnitude relation is comparable between the two schemes and differencing algorithms, the differences in completess are more apparent.
 We find that SFFT outperforms ZOGY when it comes to number of sources extracted, while between both differencing algorithms, Stack+Sub appears to extract more sources.
 
-Below is a bar plot showing the number of sources extracted from a single epoch, using Stack+Sub, and using Sub+Stack in 0.25 magnitude bins, compared to truth.
+Below is a bar plot showing the number of sources extracted from a single epoch, from Stack+Sub, and from Sub+Stack in 0.25 magnitude bins, compared to truth.
 
 |zogy_bar| |sfft_bar|
 
@@ -160,7 +160,7 @@ Below is a bar plot showing the number of sources extracted from a single epoch,
 .. |sfft_bar| image:: /images/091126/sfft_bar.png
    :width: 500
 
-Below is a completeness plot showing the number of sources extracted from a single epoch, using Stack+Sub, and using Sub+Stack in 0.5 magnitude bins.
+Below is a completeness plot showing the number of sources extracted from a single epoch, from Stack+Sub, and from Sub+Stack in 0.5 magnitude bins.
 
 |zogy_completeness| |sfft_completeness|
 
