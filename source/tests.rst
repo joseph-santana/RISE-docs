@@ -179,7 +179,7 @@ Below are completeness plots showing the number of sources extracted from a sing
 
 We see that SFFT outperforms ZOGY in terms of the number of sources extracted, while Stack+Sub outperforms Sub+Stack within SFFT.
 The stacking scheme comparison is less clear with ZOGY, though if real Roman data behaves like the OU24 simulations,
-RAPID is poised to downselect the differencing algorithm to SFFT.
+RAPID and RISE are both poised to downselect the differencing algorithm to SFFT.
 
 Conclusions
 ^^^^^^^^^^^
