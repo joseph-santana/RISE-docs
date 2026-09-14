@@ -104,12 +104,12 @@ and used 3 fields per filter. This takes the test of our first filter (F184) fro
 
 For injection positions, we used randomly choosen offset radii between 1.5px = .165" and 10px = 1.1" from the galaxy centroid position as defined in the truth catalog.
 
-We then ran Source Extractor (SExtractor) on the differenced images with these injections, using a 1.5 :math:`\sigma` threshold across 3 adjacent pixels. We then matched the SExtractor
+We then ran Source Extractor (SExtractor) on the differenced images with these injections, using a 1.5 :math:`1.5\sigma` threshold across 3 adjacent pixels. We then matched the SExtractor
 catalogs to the injection truth positions. To determine a matching radius between sextractor coordinates and truth coordinates, we took a look at how the number of sources extracted
 chnaged as a function of matching radius.
 
-We find that it varies between between fields and each iteration in a field, though we consistenly find that there is a change in slope around 0.5px = 0.055",
-which is interpreted as the point when residual contamintation dominates over matching to truth injections.
+We find that the number of matched injections varies between fields, and each iteration in a field, though we consistenly find that there is a change in slope around 0.5px = 0.055".
+We interpret this as the point when residual contamintation dominates over matching to truth injections.
 We adopt 0.5px = 0.055" as the match radius for our tests.
 
 We also find that SFFT is less-sensitive to the stacking scheme, while for ZOGY, we see a preference for the Stack+Sub method.
@@ -136,7 +136,7 @@ Below are 3 examples of our match radius findings.
 S/N vs Truth Magnitude relation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Using our inejections on top of galaxies, we find the S/N vs truth magnitudes to be comparable. There is neglible difference between the S/N of a given source between the two stacking methods
+Using our injections on top of galaxies, we find the S/N vs truth magnitudes to be comparable. There is neglible difference between the S/N of a given source between the two stacking methods
 or the two differencing algorithms.
 
 
