@@ -132,13 +132,13 @@ We also find that SFFT is less-sensitive to the stacking scheme, while for ZOGY,
 
 *Number of matched injections vs match radius*
 
-.. |match_vs_rad_ex1| image:: /images/match_vs_rad_ex1.png
+.. |match_vs_rad_ex1| image:: /images/match_vs_rad_iter1.png
    :width: 330
 
-.. |match_vs_rad_ex2| image:: /images/match_vs_rad_ex2.png
+.. |match_vs_rad_ex2| image:: /images/match_vs_rad_iter4.png
    :width: 330
 
-.. |match_vs_rad_ex3| image:: /images/match_vs_rad_ex3.png
+.. |match_vs_rad_ex3| image:: /images/match_vs_rad_iter5.png
    :width: 330
 
 
