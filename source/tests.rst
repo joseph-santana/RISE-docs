@@ -110,9 +110,10 @@ We then ran Source Extractor (SExtractor) on the differenced images with these i
 catalogs to the injection truth positions. To determine a matching radius between sextractor coordinates and truth coordinates, we took a look at how the number of sources extracted
 chnaged as a function of matching radius.
 
-We find that it varies between between fields and each iteration in a field, though we consistenly find that there is a change in slope around 0.5px = 0.055", which is interpreted as the
-point when residual contamintation dominates over matching to truth injections.
-We also find that SFFT is less-sensitive to the stacking scheme, while for ZOGY, we see a preference for the Stack+Sub method
+We find that it varies between between fields and each iteration in a field, though we consistenly find that there is a change in slope around 0.5px = 0.055",
+which is interpreted as the point when residual contamintation dominates over matching to truth injections.
+We also find that SFFT is less-sensitive to the stacking scheme, while for ZOGY, we see a preference for the Stack+Sub method.
+Below are 3 examples of our match radius findings.
 
 |match_vs_rad_ex1|
 
