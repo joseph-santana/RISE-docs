@@ -80,10 +80,24 @@ In the mean time, our tests use the OpenUniverse2024 (OU24) simulated Roman data
 
 To test the efficacy of the two methods, we injected fake sources with randomly generated magnitudes between 25.5 and 29 into galaxies within the OU24 simualations.
 We ested to see which stacking and subtracting strategy had the least amount of noise, extracted the most sources (highest completeness), and had a fainter S/N vs truth magnitude relation.
-To choose candidate galaxies to inject into, we used the truth catalog to identify galaxies that had flux counts above some threshold. We choose this threshold to be 10,000 counts.
+To choose candidate galaxies to inject into, we used the truth catalog to identify galaxies that had flux counts above some threshold to exclude particularly faint galaxies.
+We somewhat aribitratily choose this threshold to be 10,000 counts.
+
 We then made a full-coverage cut, using only galaxies that had coverage in all epochs that were used in both the science and reference image stacks.
 
-For reference, after all cuts, a single field in filter F184 had 513 full-coverage galaxies. To improve statstics on our measurmeents, we iterated over each field 5 times,
+For these injections atop of galaxies, we use an 8-stack science image, and a 16-stack reference.
+
+|sci_image_injections| |diff_image_injections|
+
+*Science and reference images with galaxy injections marked. Science image is 8-stack depth, and reference image is 16-stack depth.*
+
+.. |sci_image_injections| image:: /images/091126/cropped_sci_image_injections.png
+   :width: 500
+
+.. |diff_image_injections| image:: /images/091126/cropped_diff_image_injections.png
+   :width: 500
+
+For reference, after all cuts, a single field in filter F184 had 513 full-coverage galaxies. To improve statstics on our measurments, we iterated over each field 5 times,
 and used 3 fields per filter. This takes our first field from 513 injections to  ~7,700.
 
 For injection positions, we used randomly choosen offset radii between 1.5px = .165" and 10px = 1.1" from the galaxy centroid position as defined in the truth catalog.
