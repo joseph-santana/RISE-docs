@@ -15,8 +15,8 @@ We found that stacking with AWAICgen reduced the noise in the stacked image by r
    :width: 400px
 
    Background cutouts and RMS values of a single OU24 image,
-   and 2, 4, and 8 depth stacks. The noise reduction roughly
-   follows :math:`\sqrt{N}`.
+   and 2, 4, and 8 depth stacks with the same strech applied.
+   The noise reduction roughly follows :math:`\sqrt{N}`.
 
 .. _AWAICgen: https://arxiv.org/abs/0812.4310
 
@@ -75,11 +75,46 @@ Stacking Scheme
 ===============
 
 We tested the order in which we stack and subtract. More info on the two stacking methods can be found `here (Link to pipeline_strcture.rst)`.
+With the recent launch of the Roman Space Telescope, we eagerly await commissioning and early science data to perform analysis on real data.
+In the mean time, our tests use the OpenUniverse2024 (OU24) simulated Roman data.
+
+To test the efficacy of the two methods, we injected fake sources with randomly generated magnitudes between 25.5 and 29 into galaxies within the OU24 simualations.
+We ested to see which stacking and subtracting strategy had the least amount of noise, extracted the most sources (highest completeness), and had a fainter S/N vs truth magnitude relation.
+To choose candidate galaxies to inject into, we used the truth catalog to identify galaxies that had flux counts above some threshold. We choose this threshold to be 10,000 counts.
+We then made a full-coverage cut, using only galaxies that had coverage in all epochs that were used in both the science and reference image stacks.
+
+For reference, after all cuts, a single field in filter F184 had 513 full-coverage galaxies. To improve statstics on our measurmeents, we iterated over each field 5 times,
+and used 3 fields per filter. This takes our first field from 513 injections to  ~7,700.
+
+For injection positions, we used randomly choosen offset radii between 1.5px = .165" and 10px = 1.1" from the galaxy centroid position as defined in the truth catalog.
+
+We then ran Source Extractor (SExtractor) on the differenced images with these injections, using a 1.5:math:`\sigma` threshold across 3 adjacent pixels. We then matched the SExtractor
+catalogs to the injection truth positions. To determine a matching radius between sextractor coordinates and truth coordinates, we took a look at how the number of sources extracted
+chnaged as a function of matching radius.
+
+We find that it varies between between fields and each iteration in a field, though we consistenly find that there is a change in slope around 0.5px = 0.055", which is interpreted as the
+point when residual contamintation dominates over matching to truth injections.
+We also find that SFFT is less-sensitive to the stacking scheme, while for ZOGY, we see a preference for the Stack+Sub method
 
 .. figure:: /images/091126/snr_fig.png
     :width: 1000px
 
-    SNR vs Truth Mag
+    SNR vs Truth Magnitude
+
+
+Using our inejections on top of galaxies, we find the S/N vs truth magnitudes to be comparable. There is neglible difference between the S/N of a given source between the two stacking methods
+or the two differencing algorithms.
+
+
+.. figure:: /images/091126/snr_fig.png
+    :width: 1000px
+
+    SNR vs Truth Magnitude
+
+
+Though the S/N vs magnitude relation is comparable between the two schemes and differencing algorithms, the differences in completess are more apparent.
+We find that SFFT outperforms ZOGY when it comes to number of sources extracted, while between both differencing algorithms, Stack+Sub appears to extract more sources. 
+
 
 |zogy_bar| |sfft_bar|
 
