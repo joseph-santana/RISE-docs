@@ -107,7 +107,7 @@ For injection positions, we used randomly choosen offset radii between 1.5px = .
 
 We then ran Source Extractor (SExtractor) on the differenced images with these injections, using a 1.5σ threshold across 3 adjacent pixels. We then matched the SExtractor
 catalogs to the injection truth positions. To determine a matching radius between sextractor coordinates and truth coordinates, we took a look at how the number of sources extracted
-chnaged as a function of matching radius.
+varied as a function of matching radius.
 
 |match_vs_rad_ex1|
 
@@ -138,6 +138,7 @@ S/N vs Truth Magnitude relation
 
 Using our injections on top of galaxies, we find the S/N vs truth magnitudes to be comparable.
 We measure S/N using an 4-pixel diameter aperture.
+
 .. figure:: /images/091126/snr_fig.png
     :width: 1000px
 
