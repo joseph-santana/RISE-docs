@@ -104,7 +104,7 @@ and used 3 fields per filter. This takes the test of our first filter (F184) fro
 
 For injection positions, we used randomly choosen offset radii between 1.5px = .165" and 10px = 1.1" from the galaxy centroid position as defined in the truth catalog.
 
-We then ran Source Extractor (SExtractor) on the differenced images with these injections, using a 1.5 :math:`1.5\sigma` threshold across 3 adjacent pixels. We then matched the SExtractor
+We then ran Source Extractor (SExtractor) on the differenced images with these injections, using a 1.5:math:`\sigma` threshold across 3 adjacent pixels. We then matched the SExtractor
 catalogs to the injection truth positions. To determine a matching radius between sextractor coordinates and truth coordinates, we took a look at how the number of sources extracted
 chnaged as a function of matching radius.
 
