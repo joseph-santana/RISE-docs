@@ -82,7 +82,7 @@ To test the efficacy of the two methods, we injected fake sources with randomly 
 We tested to see which stacking and subtracting strategy had the least amount of noise, extracted the most sources (highest completeness), and had a fainter S/N vs truth magnitude relation.
 
 We find differences in background noise between the stacking schemes and the differencing algorithms to be neglible.
-The difference in background noise between the most and least noisy image is :math:`>1.5%`.
+The difference in background noise between the most and least noisy image is >1.5%.
 
 .. figure:: /images/noise_comparison.png
     :width: 700px
@@ -97,7 +97,7 @@ For these injections atop of galaxies, we use an 8-stack science image, and a 16
 
 |sci_image_injections| |diff_image_injections|
 
-*Science image and SFFT Stack+Sub difference image with galaxy injections marked. Science image is 8-stack depth, and reference image is 16-stack depth.*
+*Science image and SFFT Stack+Sub difference image with injections marked. Science image is 8-stack depth, and reference image is 16-stack depth.*
 
 .. |sci_image_injections| image:: /images/cropped_sci_image_galaxy_injections.png
    :width: 500
