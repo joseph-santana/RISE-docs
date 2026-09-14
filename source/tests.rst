@@ -137,13 +137,13 @@ We also find that SFFT is less-sensitive to the stacking scheme, while for ZOGY,
 *Number of matched injections vs match radius*
 
 .. |match_vs_rad_ex1| image:: /images/match_vs_rad_iter1.png
-   :width: 1000
+   :width: 800
 
 .. |match_vs_rad_ex2| image:: /images/match_vs_rad_iter4.png
-   :width: 1000
+   :width: 800
 
 .. |match_vs_rad_ex3| image:: /images/match_vs_rad_iter5.png
-   :width: 1000
+   :width: 800
 
 
 S/N vs Truth Magnitude relation
