@@ -78,16 +78,26 @@ We tested the order in which we stack and subtract. More info on the two stackin
 With the recent launch of the Roman Space Telescope, we eagerly await commissioning and early science data to perform analysis on real data.
 In the mean time, our tests use the OpenUniverse2024 (OU24) simulated Roman data.
 
+Open Universe 2024 Simulations
+------------------------------
+
 To test the efficacy of the two methods, we injected fake sources with randomly generated magnitudes between 25.5 and 29 into galaxies within the OU24 simualations.
 We tested to see which stacking and subtracting strategy had the least amount of noise, extracted the most sources (highest completeness), and had a fainter S/N vs truth magnitude relation.
 
+Background Noise
+^^^^^^^^^^^^^^^^
+
 We find differences in background noise between the stacking schemes and the differencing algorithms to be neglible.
-The difference in background noise between the most and least noisy image is >1.5%.
+The difference in background noise between the most and least noisy image is <1.5%.
 
 .. figure:: /images/noise_comparison.png
     :width: 700px
 
     Noise comparison between varying stacking scheme and differencing algorithm.
+
+
+Injections
+^^^^^^^^^^
 
 To choose candidate galaxies to inject into, we used the truth catalog to identify galaxies that had flux counts above some threshold to exclude particularly faint galaxies.
 We somewhat aribitratily choose this threshold to be 10,000 counts.
@@ -118,11 +128,22 @@ We find that it varies between between fields and each iteration in a field, tho
 point when residual contamintation dominates over matching to truth injections.
 We also find that SFFT is less-sensitive to the stacking scheme, while for ZOGY, we see a preference for the Stack+Sub method
 
-.. figure:: /images/091126/snr_fig.png
-    :width: 1000px
+|match_vs_rad_ex1| |match_vs_rad_ex2| |match_vs_rad_ex3|
 
-    SNR vs Truth Magnitude
+*Number of matched injections vs match radius*
 
+.. |match_vs_rad_ex1| image:: /images/match_vs_rad_ex1.png
+   :width: 330
+
+.. |match_vs_rad_ex2| image:: /images/match_vs_rad_ex2.png
+   :width: 330
+
+.. |match_vs_rad_ex3| image:: /images/match_vs_rad_ex3.png
+   :width: 330
+
+
+S/N vs Truth Magnitude relation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Using our inejections on top of galaxies, we find the S/N vs truth magnitudes to be comparable. There is neglible difference between the S/N of a given source between the two stacking methods
 or the two differencing algorithms.
@@ -136,7 +157,6 @@ or the two differencing algorithms.
 
 Though the S/N vs magnitude relation is comparable between the two schemes and differencing algorithms, the differences in completess are more apparent.
 We find that SFFT outperforms ZOGY when it comes to number of sources extracted, while between both differencing algorithms, Stack+Sub appears to extract more sources. 
-
 
 |zogy_bar| |sfft_bar|
 
