@@ -136,14 +136,15 @@ Below are 3 examples of our match radius findings.
 S/N vs Truth Magnitude relation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Using our injections on top of galaxies, we find the S/N vs truth magnitudes to be comparable. There is neglible difference between the S/N of a given source between the two stacking methods
-or the two differencing algorithms.
+Using our injections on top of galaxies, we find the S/N vs truth magnitudes to be comparable.
+We measure S/N using an 4-pixel diameter aperture.
+There is neglible difference between the S/N of a given source between the two stacking methods or the two differencing algorithms.
 
 
 .. figure:: /images/091126/snr_fig.png
     :width: 1000px
 
-    SNR vs Truth Magnitude
+    SNR vs Truth Magnitude plots for both ZOGY and SFFT difference images
 
 
 Though the S/N vs magnitude relation is comparable between the two schemes and differencing algorithms, the differences in completess are more apparent.
@@ -151,7 +152,7 @@ We find that SFFT outperforms ZOGY when it comes to number of sources extracted,
 
 |zogy_bar| |sfft_bar|
 
-*Sextractor detections* :math:`> 5\sigma`\ *. Number of detections in each stacking scheme compared to truth in 0.25 magntiude bins*
+*Sextractor detections above 5σ. Number of detections in each stacking scheme compared to truth in 0.25 magntiude bins*
 
 .. |zogy_bar| image:: /images/091126/zogy_bar.png
    :width: 500
