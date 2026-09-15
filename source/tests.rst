@@ -155,9 +155,9 @@ Detection Completeness
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Though the S/N vs magnitude relation is comparable between the two schemes and differencing algorithms, the differences in completeness are more apparent.
-We find that SFFT outperforms ZOGY when it comes to the number of sources extracted, while between both differencing algorithms, Stack+Sub appears to extract more sources.
+We find that SFFT outperforms ZOGY in the number of sources extracted, while between both differencing algorithms, Stack+Sub appears to extract more sources than Sub+Stack.
 
-Below are bar plots showing the number of sources extracted from a single epoch, from Stack+Sub, and from Sub+Stack in 0.25 magnitude bins, compared to truth.
+Below are bar plots showing the number of sources extracted from a single epoch and from the Stack+Sub and Sub+Stack difference images in 0.5 magnitude bins, compared to truth.
 
 |zogy_bar| |sfft_bar|
 
@@ -169,7 +169,7 @@ Below are bar plots showing the number of sources extracted from a single epoch,
 .. |sfft_bar| image:: /images/091126/sfft_bar.png
    :width: 500
 
-Below are completeness plots showing the number of sources extracted from a single epoch, from Stack+Sub, and from Sub+Stack in 0.5 magnitude bins.
+Below are completeness plots showing the number of sources extracted from a single epoch and from the Stack+Sub and Sub+Stack difference images in 0.5 magnitude bins.
 
 |zogy_completeness| |sfft_completeness|
 
@@ -181,15 +181,20 @@ Below are completeness plots showing the number of sources extracted from a sing
 .. |sfft_completeness| image:: /images/091126/sfft_completeness.png
    :width: 500
 
-We see that SFFT outperforms ZOGY in terms of the number of sources extracted, while Stack+Sub outperforms Sub+Stack within SFFT.
+We see that SFFT outperforms ZOGY in number of extracted sources, while Stack+Sub outperforms Sub+Stack within SFFT.
 The stacking scheme comparison is less clear with ZOGY, though if real Roman data behaves like the OU24 simulations,
 RAPID and RISE are both poised to downselect the differencing algorithm to SFFT.
 
 Conclusions
 ^^^^^^^^^^^
 
-From these analyses, it is clear that Stack+Sub slightly outperforms Sub+Stack when it comes to the number of sources extracted, while SFFT outperforms ZOGY,
+The differences in background noise are neglible between the differencing algorithms and the stacking scheme,
+while the S/N vs truth magnitude relation between the 4 methods are also comparable.
+Stack+Sub slightly outperforms Sub+Stack when it comes to the number of sources extracted, while SFFT outperforms ZOGY,
 likely due to the undersampled PSF models that are used as inputs in ZOGY.
+
+For the OU24 simulations, Stack+Sub performed with SFFT differencing appears to be the best method,
+though Roman WFI data may behave differently.
 
 Roman Data
 ----------
@@ -200,4 +205,6 @@ More details to come.
 
 Limiting Magntiude
 ==================
+
+More details to come.
 
