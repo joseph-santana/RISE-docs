@@ -146,7 +146,8 @@ We measure S/N using a 4-pixel diameter aperture.
     SNR vs Truth Magnitude plots for both ZOGY and SFFT difference images
 
 There is negligible difference between the S/N of a given source between the two stacking methods or the two differencing algorithms, though we find a larger scatter in SFFT within the faintest bins.
-This is likely because there are more detections in SFFT -- especially at the faint end -- and these faint detections have a very wide scatter, suggesting more residual contamination at the faint end with SFFT.
+The large scatter of faint injections suggests more residual contamination at the faint end with SFFT.
+**Talk about ways that RISE hopes to get rid of residuals in the future? Basic cuts, Real/Bogus ML classifiers?**
 
 .. From this, we also take S/N to be an unilluminating metric by which we can compare the effectiveness of the different stacking schemes.
 
