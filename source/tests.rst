@@ -70,6 +70,8 @@ We tested to see which stacking and subtracting strategy had the least amount of
 Background Noise
 ^^^^^^^^^^^^^^^^
 
+We take a star-free, 150pixel by 150pixel cutout in the central region of an epoch,
+and compare the standard deviation of this region across the difference images produced by varying stacking schemes and differencing algorithms.
 We find differences in background noise between the stacking schemes and the differencing algorithms to be negligible.
 The difference in background noise between the most and least noisy image is <1.5%.
 
@@ -84,8 +86,8 @@ From this, we take background noise to be an unilluminating metric by which we c
 Injections
 ^^^^^^^^^^
 
-To choose candidate galaxies to inject into, we used the truth catalog to identify galaxies that had flux counts above some threshold to exclude particularly faint galaxies.
-We somewhat arbitrarily chose this threshold to be 10,000 counts.
+To choose candidate galaxies to inject into, we used the truth catalog to identify galaxies that had flux counts above some threshold.
+We chose this threshold to be 10,000 counts to maximize the number of candidate galaxies, while excluding the faintest.
 We then made a full-coverage cut, using only galaxies that had coverage in all epochs that were used in both the science and reference image stacks.
 
 For these injections atop galaxies, we use an 8-stack science image and a 16-stack reference.
@@ -100,12 +102,12 @@ For these injections atop galaxies, we use an 8-stack science image and a 16-sta
 .. |diff_image_injections| image:: /images/cropped_diff_image_galaxy_injections.png
    :width: 500
 
-For reference, after all cuts, a single field in filter F184 had 513 full-coverage galaxies. To improve statistics on our measurements, we iterated over each field 5 times,
+After all cuts, a single field in filter F184 had 513 full-coverage galaxies. To improve statistics on our measurements, we iterated over each field 5 times,
 and used 3 fields per filter. This takes the test of our first filter (F184) from 513 injections to  ~7,700.
 
 For injection positions, we used randomly choosen offset radii between 1.5px = .165" and 10px = 1.1" from the galaxy centroid position as defined in the truth catalog.
 
-We then ran Source Extractor (SExtractor) on the differenced images with these injections, using a 1.5σ threshold across 3 adjacent pixels. We then matched the SExtractor
+We then ran Source Extractor (SExtractor) on the differenced images with injections, using a 1.5σ threshold across 3 adjacent pixels. We then matched the SExtractor
 catalogs to the injection truth positions. To determine a matching radius between SExtractor coordinates and truth coordinates, we took a look at how the number of sources extracted
 varied as a function of matching radius. Below are 3 examples of our match radius findings.
 
@@ -126,11 +128,11 @@ varied as a function of matching radius. Below are 3 examples of our match radiu
 .. |match_vs_rad_ex3| image:: /images/match_vs_rad_iter5.png
    :width: 800
 
-We find that the number of matched injections varies between fields, and each iteration in a field, though we consistently find that there is a change in slope around 0.5px = 0.055".
-We interpret this as the point when residual contamination dominates over matching to truth injections.
-We adopt 0.5px = 0.055" as the match radius for our tests.
+We find that the number of matched injections varies between fields -- and each iteration within a field, though we consistently find that there is a change in slope around 0.5px.
+We interpret this as the point when matching to contaminating galaxy residuals dominates over matching to truth injections.
+We adopt 0.5px as the match radius for our tests.
 
-We also find that SFFT is less sensitive to the stacking scheme, while for ZOGY, we see a preference for the Stack+Sub method.
+We also find the Stack+Sub method extracts more sources in ZOGY difference images, and SFFT is less sensitive to the stacking scheme.
 
 S/N vs Truth Magnitude relation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -145,6 +147,7 @@ We measure S/N using a 4-pixel diameter aperture.
 
 There is negligible difference between the S/N of a given source between the two stacking methods or the two differencing algorithms, though we find a larger scatter in SFFT within the faintest bins.
 This is likely because there are more detections in SFFT -- especially at the faint end -- and these faint detections have a very wide scatter, suggesting more residual contamination at the faint end with SFFT.
+
 .. From this, we also take S/N to be an unilluminating metric by which we can compare the effectiveness of the different stacking schemes.
 
 Detection Completeness
