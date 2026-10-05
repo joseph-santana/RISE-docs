@@ -94,7 +94,7 @@ For these injections atop galaxies, we use an 8-stack science image and a 16-sta
 
 |sci_image_injections| |diff_image_injections|
 
-*Science image and SFFT Stack+Sub difference image with injections marked. Science image is 8-stack depth, and reference image is 16-stack depth.*
+*F-band science image and SFFT Stack+Sub difference image with injections marked. Science image is 8-stack depth, and reference image is 16-stack depth.*
 
 .. |sci_image_injections| image:: /images/cropped_sci_image_galaxy_injections.png
    :width: 500
@@ -124,11 +124,11 @@ For both F184 and R062, we used 2 different fields.
 In the case of F-band, we used 5 realizations of varying galaxy offsets and injection magnitudes for each field.
 This totaled to 10 total iterations covering over 4800 injected transients.
 
-For R-band, similarly to our analyses of F-band we used 2 fields, but needed many more realizations of transient injections.
+For R-band, similarly to our analyses of F-band, we used 2 fields, but generated many more realizations of transient injections.
 In total, there were 26 realizations across the 2 fields, totaling to a total injected transient count to just shy of 2000.
 
-We then ran Source Extractor (SExtractor) on the differenced images with injections, using a 1.5σ threshold across 3 adjacent pixels. We then matched the SExtractor
-catalogs to the injection truth positions. To determine a matching radius between SExtractor coordinates and truth coordinates, we took a look at how the number of sources extracted
+We then ran Source Extractor (SExtractor) on the differenced images with the injections, using a 1.5σ threshold (Sextractor DETECT_THRESH parameters) across 3 adjacent pixels (Sextractor DETECT_MINAREA parameter). We then matched the SExtractor
+catalog to the injection truth positions. To determine a matching radius between SExtractor coordinates and truth coordinates, we took a look at how the number of sources extracted
 varied as a function of matching radius. Below are 3 examples of our match radius findings.
 
 |match_vs_rad_ex1|
@@ -152,24 +152,27 @@ We find that the number of matched injections varies between fields -- and each 
 We interpret this as the point when matching to contaminating galaxy residuals dominates over matching to truth injections.
 We adopt 0.5px as the match radius for our tests.
 
-We also find the Stack+Sub method extracts more sources in ZOGY difference images, and SFFT is less sensitive to the stacking scheme.
+We also find the Stack+Sub method extracts more sources in ZOGY difference images, while SFFT is less sensitive to the stacking scheme.
 
 S/N vs Truth Magnitude relation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Using our injections atop galaxies, we find the S/N vs truth magnitudes to be comparable.
+Using our injections atop galaxies, we find the S/N vs truth magnitudes to be comparable in analyses of both R-band and F-band.
 We measure S/N using a 4-pixel diameter aperture.
 
-.. figure:: /images/091126/snr_fig.png
+.. figure:: /images/091126/snr_vs_mag_f184.png
     :width: 1000px
 
-    SNR vs Truth Magnitude plots for both ZOGY and SFFT difference images
+    SNR vs Truth Magnitude plots for both ZOGY and SFFT difference images. SNR is obtained using an Sextractor 4-pixel diameter aperture. Analysis of F-band.
 
-There is negligible difference between the S/N of a given source between the two stacking methods or the two differencing algorithms, though we find a larger scatter in SFFT within the faintest bins.
+.. figure:: /images/091126/snr_vs_mag_r062.png
+    :width: 1000px
+
+    SNR vs Truth Magnitude plots for both ZOGY and SFFT difference images. SNR is obtained using an Sextractor 4-pixel diameter aperture. Analysis of R-band.
+
+There is negligible difference between the S/N of a given source between the two stacking methods or the two differencing algorithms in analyses of F-band and R-band, though we find a larger scatter in SFFT within the faintest bins.
 The large scatter of faint injections suggests more residual contamination at the faint end with SFFT.
-**Talk about ways that RISE hopes to get rid of residuals in the future? Basic cuts, Real/Bogus ML classifiers?**
-
-.. From this, we also take S/N to be an unilluminating metric by which we can compare the effectiveness of the different stacking schemes.
+RISE plans to perform basic cuts and Real/Bogus classification to improve our recovery of real sources, though this is work that has not yet been done.
 
 Detection Completeness
 ^^^^^^^^^^^^^^^^^^^^^^
