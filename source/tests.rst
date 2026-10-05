@@ -306,7 +306,7 @@ To dig into this, we take a look at the SExtractor catalogs of the difference im
 We can examine if the nature of the residuals are consistent between the two convolution kernels.
 
 .. figure:: images/sextractor_snr_whole_dist.png
-    :width: 700px
+    :width: 800px
 
     SNR Distribution of difference images with and without injections. 
 
@@ -315,7 +315,7 @@ We can examine if the nature of the residuals are consistent between the two con
     :width: 800px
 
 .. figure:: images/sextractor_snr_zoom_1_wo_injections.png
-    :width: 900px
+    :width: 800px
 
 
     SNR Distribution of difference images with and without injections, zoomed into the central SNR range.
@@ -323,7 +323,7 @@ We can examine if the nature of the residuals are consistent between the two con
     The bottom histogram shows the distrubtion with the detections of the transients injections removed, to more fairly compare the two runs.
 
 .. figure:: images/sextractor_snr_zoom_2.png
-    :width: 1000px
+    :width: 800px
 
 
     SNR Distribution of difference images with and without injections, zoomed further into the central SNR range.
