@@ -316,7 +316,7 @@ We accoutnt for this by simply discarding the detected sources that have been ma
 Below are histograms before and after accounting for injections.
 
 
-.. figure:: images/sextractor_snr_zoom_1_both.png
+.. figure:: images/sextractor_snr_zoom_1_w_and_wo_inj.png
     :width: 800px
 
     SNR Distribution of difference images with and without injections, zoomed into the central SNR range.
