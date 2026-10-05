@@ -179,10 +179,11 @@ RISE plans to perform basic cuts and Real/Bogus classification to improve our re
 Detection Completeness
 ^^^^^^^^^^^^^^^^^^^^^^
 
+While the S/N vs magnitude relation is comparable between the two schemes, the two differencing algorithms, and the two filters, the differences in completeness are more apparent.
+Below details the comparable analyses performed on F-band images and R-band images, and the ways in which the results from the two cases differ.
+
 Filter F184
 """""""""""
-
-Though the S/N vs magnitude relation is comparable between the two schemes and differencing algorithms, the differences in completeness are more apparent.
 We find that SFFT outperforms ZOGY in the number of sources extracted, while between both differencing algorithms, Stack+Sub appears to extract more sources than Sub+Stack.
 
 Below are bar plots showing the number of sources extracted from a single epoch and from the Stack+Sub and Sub+Stack difference images in 0.5 magnitude bins, compared to truth.
@@ -191,10 +192,10 @@ Below are bar plots showing the number of sources extracted from a single epoch 
 
 *Sextractor detections above 5σ. Number of detections in each stacking scheme compared to truth in 0.25 magnitude bins*
 
-.. |zogy_bar| image:: /images/091126/zogy_bar.png
+.. |zogy_bar| image:: /images/zogy_bar_f184.png
    :width: 500
 
-.. |sfft_bar| image:: /images/091126/sfft_bar.png
+.. |sfft_bar| image:: /images/sfft_bar_f184.png
    :width: 500
 
 Below are completeness plots showing the number of sources extracted from a single epoch and from the Stack+Sub and Sub+Stack difference images in 0.5 magnitude bins.
@@ -203,10 +204,10 @@ Below are completeness plots showing the number of sources extracted from a sing
 
 *Sextractor detections above 5σ. Completeness in each stacking scheme in 0.5 magnitude bins*
 
-.. |zogy_completeness| image:: /images/091126/zogy_completeness.png
+.. |zogy_completeness| image:: /images/zogy_completeness_f184.png
    :width: 500
 
-.. |sfft_completeness| image:: /images/091126/sfft_completeness.png
+.. |sfft_completeness| image:: /images/sfft_completeness_f184.png
    :width: 500
 
 We see that SFFT outperforms ZOGY in number of extracted sources, while Stack+Sub outperforms Sub+Stack within SFFT.
