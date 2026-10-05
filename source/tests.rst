@@ -256,7 +256,7 @@ the distribution of the galaxies that we are injecting onto skews much fainter i
 Therefore it's hyposthesized that the R-band injections behave more like injecting atop blank sky, than it does to injecting atop bright galaxies in F-band.
 
 .. figure:: images/galaxy_hists_rband_and_fband.png
-    :width: 500px
+    :width: 1000px
 
     Histrograms showing the brightness of injected galaxies in counts for both R-band and F-band. F-band galaxies skew brighter because of the longer exposure time for F-band.
 
