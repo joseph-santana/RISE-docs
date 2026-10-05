@@ -271,7 +271,7 @@ This happened to be :math:`2.01\cdot10^5` counts.
 
     Galaxy brightness histrograms before the upper-limit flux cut.
     Histrograms showing the brightness of injected galaxies in counts for both R-band and F-band.
-    F-band galaxy brightness distribution now matches that of R-band galaxies.
+    F-band galaxy brightness distribution matches that of R-band galaxies much more closely.
 
 
 Conclusions
