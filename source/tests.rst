@@ -246,12 +246,12 @@ In R-band images, we see that SFFT outperforms ZOGY in number of extracted sourc
 
 One hypothesis as to why we see this discrepancy between analysis on R-band and F-band deals with the chacterstics of the galaxies onto which we are injecting.
 Because the exposure time of R-band images is shorter than the exposure time of F-band images by a factor of ~5.6,
-the distribution of the galaxies that we are injecting onto skews much fainter than the disttribution of candidate injection-galaxies in F-band.
+the distribution of the galaxies that we are injecting onto skews much fainter in count space than the disttribution of candidate injection-galaxies in F-band.
 Therefore it's hyposthesized that the R-band injections behave more like injecting atop blank sky, than it does to injecting atop bright galaxies in F-band.
 
 To test this, we redo analysis, looking only at injections atop faint galaxies in F-band to see if we can reproduce the results of our R-band analysis.
 We limit our analysis to injections that are within some flux range: the lower limit is 10,000 counts, while the upper limit is taken directly from the injected galaxy with the highest flux count in the R-band image.
-This happened to be :math:`2.01*10^5`
+This happened to be :math:`2.01\cdot10^5`
 
 Conclusions
 ^^^^^^^^^^^
