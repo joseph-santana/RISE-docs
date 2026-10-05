@@ -319,7 +319,6 @@ Below are histograms before and after accounting for injections.
 .. figure:: images/sextractor_snr_zoom_1_both.png
     :width: 800px
 
-
     SNR Distribution of difference images with and without injections, zoomed into the central SNR range.
     The top histrogram shows the distribution containing some detections of the injected transients.
     The bottom histogram shows the distrubtion with the detections of the transients injections removed, to more fairly compare the two runs.
