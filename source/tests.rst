@@ -160,12 +160,12 @@ S/N vs Truth Magnitude relation
 Using our injections atop galaxies, we find the S/N vs truth magnitudes to be comparable in analyses of both R-band and F-band.
 We measure S/N using a 4-pixel diameter aperture.
 
-.. figure:: /images/091126/snr_vs_mag_f184.png
+.. figure:: /images/snr_vs_mag_f184.png
     :width: 1000px
 
     SNR vs Truth Magnitude plots for both ZOGY and SFFT difference images. SNR is obtained using an Sextractor 4-pixel diameter aperture. Analysis of F-band.
 
-.. figure:: /images/091126/snr_vs_mag_r062.png
+.. figure:: /images/snr_vs_mag_r062.png
     :width: 1000px
 
     SNR vs Truth Magnitude plots for both ZOGY and SFFT difference images. SNR is obtained using an Sextractor 4-pixel diameter aperture. Analysis of R-band.
