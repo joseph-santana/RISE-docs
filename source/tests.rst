@@ -163,12 +163,12 @@ We measure S/N using a 4-pixel diameter aperture.
 .. figure:: /images/snr_vs_mag_f184.png
     :width: 1000px
 
-    SNR vs Truth Magnitude plots for both ZOGY and SFFT difference images. SNR is obtained using an Sextractor 4-pixel diameter aperture. Analysis of F-band.
+    F-band Analysis. SNR vs Truth Magnitude plots for both ZOGY and SFFT difference images. SNR is obtained using an Sextractor 4-pixel diameter aperture.
 
 .. figure:: /images/snr_vs_mag_r062.png
     :width: 1000px
 
-    SNR vs Truth Magnitude plots for both ZOGY and SFFT difference images. SNR is obtained using an Sextractor 4-pixel diameter aperture. Analysis of R-band.
+    R-band Analysis. SNR vs Truth Magnitude plots for both ZOGY and SFFT difference images. SNR is obtained using an Sextractor 4-pixel diameter aperture.
 
 There is negligible difference between the S/N of a given source between the two stacking methods or the two differencing algorithms in analyses of F-band and R-band, though we find a larger scatter in SFFT within the faintest bins.
 The large scatter of faint injections suggests more residual contamination at the faint end with SFFT.
