@@ -2,20 +2,12 @@
 RISE To-dos
 ===========
 
-Image Stacking and Noise Reduction
-==================================
+There are still many tests that need to be done to justify the structure of the RISE pipeline. Below are some examples of analysis that we have plans to perform:
 
-The image stacking software that RISE (and RAPID) use to generate stacked science and reference images is `AWAICgen`_.
+- correlated noise differences between the two methods and effects on completeness
+- purity plots
+- investigate what is going on with bright sources only detected by one method
+- look at individual diff images to understand why the residuals look so different between the two methods
+- what do residuals look like with 0 injections
 
-AWAICgen, originally named AWAIC (A WISE Astronomical Image Coadder), is a software developed at Caltech for use on the Wide-Field Infrared Explorer (WISE).
-
-We found that stacking with AWAICgen reduced the noise in the stacked image by roughly a factor of :math:`\sqrt{N}`, where N is the number of images used in the stack.
-
-.. figure:: /images/stack_noise.png
-   :width: 700px
-
-   Background cutouts and RMS values of a single OU24 image,
-   and 2, 4, and 8 depth stacks with the same strech applied.
-   The noise reduction roughly follows :math:`\sqrt{N}`.
-
-.. _AWAICgen: https://arxiv.org/abs/0812.4310
+If there are other tests that you think would be helpful, feel free to connect with the RISE team to discuss!
