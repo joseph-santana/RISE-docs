@@ -110,16 +110,11 @@ After all cuts, a single field in filter F184 had 513 full-coverage galaxies, wh
 Each field in a filter may have slightly more or less full-coverage galaxies.
 The sparseness of the R-band images can be attributed to the short exposure time, 161.025s compared to the 901.175s R-band exposures within the OU24 dataset.
 
-|f814_field_with_full_cov_galaxies| |r062_field_with_full_cov_galaxies|
+.. figure:: /images/r_band_and_f_band_fields.png
+    :width: 1000px
 
-*Difference image of a field in F-band, and another field in R-band, with full-coverage galaxies denoted with green circle regions.
-Sparseness of R-band image attributable to the exposure time difference between the two bands in the OU24 dataset -- 901.175s vs 116.025s for F184 and R062 respectively.*
-
-.. |f814_field_with_full_cov_galaxies| image:: /images/f184_field.png
-   :width: 500
-
-.. |r062_field_with_full_cov_galaxies| image:: /images/r062_field.png
-   :width: 500
+    Science images of a field in F-band, and another field in R-band, with full-coverage galaxies denoted with green circle regions.
+    Sparseness of R-band image attributable to the exposure time difference between the two bands in the OU24 dataset -- 901.175s vs 116.025s for F184 and R062 respectively.
 
 For injection positions, we used randomly choosen offset radii between 1.5px = .165" and 10px = 1.1" from the galaxy centroid position as defined in the truth catalog.
 
