@@ -275,7 +275,7 @@ This happened to be :math:`2.01\cdot10^5` counts.
 
 Now, if we redo the recovery analysis on F184, only using the injections atop faint galaxies which match the galaxy brightness of R-band,
 we see that the original hypothesis doesn't seem to be the right explanation.
-The cut only shaved off a few hundred of our total injection amount, meaning the bright galaxies were less of a serious contaimnant than previously thought.
+The cut only shaved off a few hundred from our total injection amount, meaning the bright galaxies were less of a serious contaimnant than previously thought.
 Additionally, the recovery statistics still show a preference for Stack+sub using SFFT or ZOGY on F184 simulated data.
 
 |r_zogy_bar_cut| |r_sfft_bar_cut|
@@ -288,7 +288,6 @@ Additionally, the recovery statistics still show a preference for Stack+sub usin
 .. |r_sfft_bar_cut| image:: /images/sfft_hist_flux_limited.png
    :width: 500
 
-
 |r_zogy_completeness_cut| |r_sfft_completeness_cut|
 
 *F-band analysis on faint galaxies. Sextractor detections above 5σ. Plot shows completeness in each stacking scheme compared to truth in 0.5 magnitude bins*
@@ -299,6 +298,8 @@ Additionally, the recovery statistics still show a preference for Stack+sub usin
 .. |r_sfft_completeness_cut| image:: /images/sfft_completeness_flux_limited.png
    :width: 500
 
+Interstingly, the F-band analysis after making a galaxy flux cut to match R-band images still shows a clear preference for Stack+sub.
+More work needs to be done to resolve the source of this difference we see between R-band and F-band.
 
 Conclusions
 ^^^^^^^^^^^
