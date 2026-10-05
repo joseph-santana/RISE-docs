@@ -328,7 +328,7 @@ The nature of the residuals are stable around the central SNR range, which is wh
 We take this as confidence that the transient injections are not substantively biasing the convolution kernel.
 
 
-.. figure:: images/sextractor_snr_zoom_2.png
+.. figure:: images/sextractor_snr_zoom_2_both.png
     :width: 800px
 
 
