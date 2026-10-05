@@ -297,6 +297,43 @@ Additionally, the recovery statistics still show a preference for Stack+sub usin
 Interstingly, the F-band analysis after making a galaxy flux cut to match R-band images still shows a clear preference for Stack+sub.
 More work needs to be done to resolve the source of this difference we see between R-band and F-band.
 
+Analysis of the Effects of injections on the SFFT Convolution Kernel
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+We want to make sure that the transients that we are injecting into the science image do not substantively bias
+or alter the SFFT convolution kernel necessary for matching science and reference images to support proper differencing.
+To dig into this, we take a look at the SExtractor catalogs of the difference image of the same field ran with and without injections.
+We can examine if the nature of the residuals are consistent between the two convolution kernels.
+
+.. figure:: images/sextractor_snr_whole_dist.png
+    :width: 700px
+
+    SNR Distribution of difference images with and without injections. 
+
+
+.. figure:: images/sextractor_snr_zoom_1_w_injections.png
+    :width: 800px
+
+.. figure:: images/sextractor_snr_zoom_1_wo_injections.png
+    :width: 900px
+
+
+    SNR Distribution of difference images with and without injections, zoomed into the central SNR range.
+    The top histrogram shows the distribution containing the detections of the trasnient injections.
+    The bottom histogram shows the distrubtion with the detections of the transients injections removed, to more fairly compare the two runs.
+
+.. figure:: images/sextractor_snr_zoom_2.png
+    :width: 1000px
+
+
+    SNR Distribution of difference images with and without injections, zoomed further into the central SNR range.
+    Comparsion of the residuals of the two difference images: with and without injections.
+    We see that the nature of the residuals are stable around the central SNR range, which is where we expect transients to fall.
+    We take this as confidence that the transient injections are not substantively biasing the convolution kernel.
+
+More work is being done to compare the convolution kernels, though we don't anticpate the injection-bias of the convolution kernel to be confounding. 
+
+
 Conclusions
 ^^^^^^^^^^^
 
