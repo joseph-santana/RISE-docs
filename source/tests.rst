@@ -86,6 +86,10 @@ From this, we take background noise to be an unilluminating metric by which we c
 Injections
 ^^^^^^^^^^
 
+We analyze filters F184 and R062. We choose to analyze R-band because this filter has the most undersampled PSF of all Roman filters.
+We choose F-band as a second filter to compare R-band to.
+
+
 To choose candidate galaxies to inject into, we used the truth catalog to identify galaxies that had flux counts above some threshold.
 We chose this threshold to be 10,000 counts to maximize the number of candidate galaxies, while excluding the faintest.
 We then made a full-coverage cut, using only galaxies that had coverage in all epochs that were used in both the science and reference image stacks.
@@ -251,7 +255,7 @@ Therefore it's hyposthesized that the R-band injections behave more like injecti
 
 To test this, we redo analysis, looking only at injections atop faint galaxies in F-band to see if we can reproduce the results of our R-band analysis.
 We limit our analysis to injections that are within some flux range: the lower limit is 10,000 counts, while the upper limit is taken directly from the injected galaxy with the highest flux count in the R-band image.
-This happened to be :math:`2.01\cdot10^5`
+This happened to be :math:`2.01\cdot10^5` counts. 
 
 Conclusions
 ^^^^^^^^^^^
