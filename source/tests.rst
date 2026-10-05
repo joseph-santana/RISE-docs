@@ -273,6 +273,32 @@ This happened to be :math:`2.01\cdot10^5` counts.
     Histrograms showing the brightness of injected galaxies in counts for both R-band and F-band.
     F-band galaxy brightness distribution matches that of R-band galaxies much more closely.
 
+Now, if we redo the recovery analysis on F184, only using the injections atop faint galaxies which match the galaxy brightness of R-band,
+we see that the original hypothesis doesn't seem to be the right explanation.
+The cut only shaved off a few hundred of our total injection amount, meaning the bright galaxies were less of a serious contaimnant than previously thought.
+Additionally, the recovery statistics still show a preference for Stack+sub using SFFT or ZOGY on F184 simulated data.
+
+|r_zogy_bar_cut| |r_sfft_bar_cut|
+
+*F-band analysis on faint galaxies. Sextractor detections above 5σ. Histrogram shows number of detections in each stacking scheme compared to truth in 0.25 magnitude bins*
+
+.. |r_zogy_bar_cut| image:: /images/zogy_bar_flux_limited.png
+   :width: 500
+
+.. |r_sfft_bar_cut| image:: /images/sfft_bar_flux_limited.png
+   :width: 500
+
+
+|r_zogy_completeness_cut| |r_sfft_completeness_cut|
+
+*F-band analysis on faint galaxies. Sextractor detections above 5σ. Histrogram shows number of detections in each stacking scheme compared to truth in 0.25 magnitude bins*
+
+.. |r_zogy_completeness_cut| image:: /images/zogy_completeness_flux_limited.png
+   :width: 500
+
+.. |r_sfft_completeness_cut| image:: /images/sfft_completeness_flux_limited.png
+   :width: 500
+
 
 Conclusions
 ^^^^^^^^^^^
