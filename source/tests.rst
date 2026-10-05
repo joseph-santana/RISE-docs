@@ -282,10 +282,10 @@ Additionally, the recovery statistics still show a preference for Stack+sub usin
 
 *F-band analysis on faint galaxies. Sextractor detections above 5σ. Histrogram shows number of detections in each stacking scheme compared to truth in 0.25 magnitude bins*
 
-.. |r_zogy_bar_cut| image:: /images/zogy_bar_flux_limited.png
+.. |r_zogy_bar_cut| image:: /images/zogy_hist_flux_limited.png
    :width: 500
 
-.. |r_sfft_bar_cut| image:: /images/sfft_bar_flux_limited.png
+.. |r_sfft_bar_cut| image:: /images/sfft_hist_flux_limited.png
    :width: 500
 
 
