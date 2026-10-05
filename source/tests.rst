@@ -327,15 +327,18 @@ Below are histograms before and after accounting for injections.
     The top histrogram shows the distribution containing the detections of the trasnient injections.
     The bottom histogram shows the distrubtion with the detections of the transients injections removed, to more fairly compare the two runs.
 
+Zooming in a bit more closely to the central SNR region, we see that the SNR distribution of differencing residuals are highly comparable between the run with and without the injections.
+The nature of the residuals are stable around the central SNR range, which is where we expect transients to fall.
+We take this as confidence that the transient injections are not substantively biasing the convolution kernel.
+
+
 .. figure:: images/sextractor_snr_zoom_2.png
     :width: 800px
 
 
     SNR Distribution of difference images with and without injections, zoomed further into the central SNR range.
     Comparsion of the residuals of the two difference images: with and without injections.
-    We see that the nature of the residuals are stable around the central SNR range, which is where we expect transients to fall.
-    We take this as confidence that the transient injections are not substantively biasing the convolution kernel.
-
+   
 More work is being done to compare the convolution kernels, though we don't anticpate the injection-bias of the convolution kernel to be confounding. 
 
 
