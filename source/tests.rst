@@ -102,10 +102,30 @@ For these injections atop galaxies, we use an 8-stack science image and a 16-sta
 .. |diff_image_injections| image:: /images/cropped_diff_image_galaxy_injections.png
    :width: 500
 
-After all cuts, a single field in filter F184 had 513 full-coverage galaxies. To improve statistics on our measurements, we iterated over each field 5 times,
-and used 3 fields per filter. This takes the test of our first filter (F184) from 513 injections to  ~7,700.
+After all cuts, a single field in filter F184 had 513 full-coverage galaxies, while a field in R062 had 80 full-coverage galaxies.
+Each field in a filter may have slightly more or less full-coverage galaxies.
+The sparseness of the R-band images can be attributed to the short exposure time, 161.025s compared to the 901.175s R-band exposures within the OU24 dataset.
+
+|f814_field_with_full_cov_galaxies| |r062_field_with_full_cov_galaxies|
+
+*Difference image of a field in F-band, and another field in R-band, with full-coverage galaxies denoted with green circle regions.
+Sparseness of R-band image attribuatable to the exposure time difference between the two bands in the OU24 dataset -- 901.175s vs 116.025s for F184 and R062 respectively.*
+
+.. |f814_field_with_full_cov_galaxies| image:: /images/f184_field.png
+   :width: 500
+
+.. |r062_field_with_full_cov_galaxies| image:: /images/r062_field.png
+   :width: 500
 
 For injection positions, we used randomly choosen offset radii between 1.5px = .165" and 10px = 1.1" from the galaxy centroid position as defined in the truth catalog.
+
+To improve statistics on our measurements, we iterated over each field multiple times.
+For both F184 and R062, we used 2 different fields.
+In the case of F-band, we used 5 realizations of varying galaxy offsets and injection magnitudes for each field.
+This totaled to 10 total iterations covering over 4800 injected transients.
+
+For R-band, similarly to our analyses of F-band we used 2 fields, but needed many more realizations of transient injections.
+In total, there were 26 realizations across the 2 fields, totaling to a total injected transient count to just shy of 2000.
 
 We then ran Source Extractor (SExtractor) on the differenced images with injections, using a 1.5σ threshold across 3 adjacent pixels. We then matched the SExtractor
 catalogs to the injection truth positions. To determine a matching radius between SExtractor coordinates and truth coordinates, we took a look at how the number of sources extracted
