@@ -126,7 +126,7 @@ This totaled to 10 total iterations covering over 4800 injected transients.
 For R-band, similarly to our analyses of F-band, we used 2 fields, but generated many more realizations of transient injections.
 In total, there were 26 realizations across the 2 fields, totaling to a total injected transient count to just shy of 2000.
 
-We then ran Source Extractor (SExtractor) on the differenced images with the injections, using a 1.5σ threshold (Sextractor DETECT_THRESH parameters) across 3 adjacent pixels (Sextractor DETECT_MINAREA parameter). We then matched the SExtractor
+We then ran Source Extractor (SExtractor) on the differenced images with the injections, using a 1.5σ threshold (SExtractor DETECT_THRESH parameters) across 3 adjacent pixels (SExtractor DETECT_MINAREA parameter). We then matched the SExtractor
 catalog to the injection truth positions. To determine a matching radius between SExtractor coordinates and truth coordinates, we took a look at how the number of sources extracted
 varied as a function of matching radius. Below are 3 examples of our match radius findings.
 
