@@ -255,7 +255,7 @@ Because the exposure time of R-band images is shorter than the exposure time of 
 the distribution of the galaxies that we are injecting onto skews much fainter in count space than the disttribution of candidate injection-galaxies in F-band.
 Therefore it's hyposthesized that the R-band injections behave more like injecting atop blank sky, than it does to injecting atop bright galaxies in F-band.
 
-.. figure:: images/galaxy_hists_rband_and_fband.png
+.. figure:: images/galaxy_hists_rband_and_fband_before_cut.png
     :width: 1000px
 
     Histrograms showing the brightness of injected galaxies in counts for both R-band and F-band. F-band galaxies skew brighter because of the longer exposure time.
@@ -263,6 +263,11 @@ Therefore it's hyposthesized that the R-band injections behave more like injecti
 To test this, we redo analysis, looking only at injections atop faint galaxies in F-band to see if we can reproduce the results of our R-band analysis.
 We limit our analysis to injections that are within some flux range: the lower limit is 10,000 counts, while the upper limit is taken directly from the injected galaxy with the highest flux count in the R-band image.
 This happened to be :math:`2.01\cdot10^5` counts. 
+
+.. figure:: images/galaxy_hists_rband_and_fband_after_cut.png
+    :width: 1000px
+
+    Histrograms showing the brightness of injected galaxies in counts for both R-band and F-band. F-band galaxies skew brighter because of the longer exposure time.
 
 
 
