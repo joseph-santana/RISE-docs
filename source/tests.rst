@@ -251,7 +251,7 @@ Therefore it's hyposthesized that the R-band injections behave more like injecti
 
 To test this, we redo analysis, looking only at injections atop faint galaxies in F-band to see if we can reproduce the results of our R-band analysis.
 We limit our analysis to injections that are within some flux range: the lower limit is 10,000 counts, while the upper limit is taken directly from the injected galaxy with the highest flux count in the R-band image.
-This happened to be :math:`2.01*10^5}`
+This happened to be :math:`2.01*10^5`
 
 Conclusions
 ^^^^^^^^^^^
