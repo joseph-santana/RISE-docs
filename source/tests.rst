@@ -188,31 +188,70 @@ We find that SFFT outperforms ZOGY in the number of sources extracted, while bet
 
 Below are bar plots showing the number of sources extracted from a single epoch and from the Stack+Sub and Sub+Stack difference images in 0.5 magnitude bins, compared to truth.
 
-|zogy_bar| |sfft_bar|
+|f_zogy_bar| |f_sfft_bar|
 
-*Sextractor detections above 5σ. Number of detections in each stacking scheme compared to truth in 0.25 magnitude bins*
+*F-band analysis. Sextractor detections above 5σ. Histrogram shows number of detections in each stacking scheme compared to truth in 0.25 magnitude bins*
 
-.. |zogy_bar| image:: /images/zogy_bar_f184.png
+.. |f_zogy_bar| image:: /images/zogy_bar_f184.png
    :width: 500
 
-.. |sfft_bar| image:: /images/sfft_bar_f184.png
+.. |f_sfft_bar| image:: /images/sfft_bar_f184.png
    :width: 500
 
 Below are completeness plots showing the number of sources extracted from a single epoch and from the Stack+Sub and Sub+Stack difference images in 0.5 magnitude bins.
 
-|zogy_completeness| |sfft_completeness|
+|f_zogy_completeness| |f_sfft_completeness|
 
-*Sextractor detections above 5σ. Completeness in each stacking scheme in 0.5 magnitude bins*
+*F-band analysis. Sextractor detections above 5σ. Plot shows completeness in each stacking scheme in 0.5 magnitude bins*
 
-.. |zogy_completeness| image:: /images/zogy_completeness_f184.png
+.. |f_zogy_completeness| image:: /images/zogy_completeness_f184.png
    :width: 500
 
-.. |sfft_completeness| image:: /images/sfft_completeness_f184.png
+.. |f_sfft_completeness| image:: /images/sfft_completeness_f184.png
    :width: 500
 
-We see that SFFT outperforms ZOGY in number of extracted sources, while Stack+Sub outperforms Sub+Stack within SFFT.
+In F-band images, we see that SFFT outperforms ZOGY in number of extracted sources, while Stack+Sub outperforms Sub+Stack within SFFT.
 The stacking scheme comparison is less clear with ZOGY, though if real Roman data behaves like the OU24 simulations,
-RAPID and RISE are both poised to downselect the differencing algorithm to SFFT.
+
+Filter R062
+"""""""""""
+We find that SFFT outperforms ZOGY in the number of sources extracted, while between both differencing algorithms, Stack+Sub appears to extract more sources than Sub+Stack.
+
+Below are bar plots showing the number of sources extracted from a single epoch and from the Stack+Sub and Sub+Stack difference images in 0.5 magnitude bins, compared to truth.
+
+|r_zogy_bar| |r_sfft_bar|
+
+*R-band analysis. Sextractor detections above 5σ. Histrogram shows number of detections in each stacking scheme compared to truth in 0.25 magnitude bins*
+
+.. |r_zogy_bar| image:: /images/zogy_bar_r062.png
+   :width: 500
+
+.. |r_sfft_bar| image:: /images/sfft_bar_r062.png
+   :width: 500
+
+Below are completeness plots showing the number of sources extracted from a single epoch and from the Stack+Sub and Sub+Stack difference images in 0.5 magnitude bins.
+
+|r_zogy_completeness| |r_sfft_completeness|
+
+*R-band analysis. Sextractor detections above 5σ. Plot shows completeness in each stacking scheme in 0.5 magnitude bins*
+
+.. |r_zogy_completeness| image:: /images/zogy_completeness_r062.png
+   :width: 500
+
+.. |r_sfft_completeness| image:: /images/sfft_completeness_r062.png
+   :width: 500
+
+In R-band images, we see that SFFT outperforms ZOGY in number of extracted sources, though the difference between the two stacking schemes is negligible for both ZOGY and SFFT.
+
+
+One hypothesis as to why we see this discrepancy between analysis on R-band and F-band deals with the chacterstics of the galaxies onto which we are injecting.
+Because the exposure time of R-band images is shorter than the exposure time of F-band images by a factor of ~5.6,
+the distribution of the galaxies that we are injecting onto skews much fainter than the disttribution of candidate injection-galaxies in F-band.
+Therefore it's hyposthesized that the R-band injections behave more like injecting atop blank sky, than it does to injecting atop bright galaxies in F-band.
+
+To test this, we redo analysis, looking only at injections atop faint galaxies in F-band to see if we can reproduce the results of our R-band analysis.
+We limit our analysis to injections that are within some flux range: the lower limit is 10,000 counts, while the upper limit is taken directly from the injected galaxy with the highest flux count in the R-band image.
+This happened to be :math:`2.01*10^5}`
 
 Conclusions
 ^^^^^^^^^^^
