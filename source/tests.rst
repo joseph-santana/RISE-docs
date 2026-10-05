@@ -163,12 +163,14 @@ We measure S/N using a 4-pixel diameter aperture.
 .. figure:: /images/snr_vs_mag_f184.png
     :width: 1000px
 
-    F-band Analysis. SNR vs Truth Magnitude plots for both ZOGY and SFFT difference images. SNR is obtained using an Sextractor 4-pixel diameter aperture.
+    F-band Analysis. SNR vs Truth Magnitude scatter plots of sources detected using with Sextractor that were matched to an injected transient.
+    Plots for both ZOGY and SFFT difference images. SNR is obtained using an Sextractor 4-pixel diameter aperture.
 
 .. figure:: /images/snr_vs_mag_r062.png
     :width: 1000px
 
-    R-band Analysis. SNR vs Truth Magnitude plots for both ZOGY and SFFT difference images. SNR is obtained using an Sextractor 4-pixel diameter aperture.
+    R-band Analysis. SNR vs Truth Magnitude scatter plots of sources detected using with Sextractor that were matched to an injected transient.
+    Plots for both ZOGY and SFFT difference images. SNR is obtained using an Sextractor 4-pixel diameter aperture.
 
 There is negligible difference between the S/N of a given source between the two stacking methods or the two differencing algorithms in analyses of F-band and R-band, though we find a larger scatter in SFFT within the faintest bins.
 The large scatter of faint injections suggests more residual contamination at the faint end with SFFT.
@@ -176,6 +178,9 @@ RISE plans to perform basic cuts and Real/Bogus classification to improve our re
 
 Detection Completeness
 ^^^^^^^^^^^^^^^^^^^^^^
+
+Filter F184
+"""""""""""
 
 Though the S/N vs magnitude relation is comparable between the two schemes and differencing algorithms, the differences in completeness are more apparent.
 We find that SFFT outperforms ZOGY in the number of sources extracted, while between both differencing algorithms, Stack+Sub appears to extract more sources than Sub+Stack.
