@@ -310,6 +310,11 @@ We can examine if the nature of the residuals are consistent between the two con
 
     SNR Distribution of difference images with and without injections. 
 
+We see that the residuals are comparable close to central SNR range of ~:math:`0 \pm 250`. We want to zoom into the central region.
+We also want to keep in mind that the sextractor catalog from the difference image run with injections will have more detected sources because of these injections.
+We accoutnt for this by simply discarding the detected sources that have been matched to a RISE injections.
+Below are histograms before and after accounting for injections.
+
 
 .. figure:: images/sextractor_snr_zoom_1_w_injections.png
     :width: 800px
