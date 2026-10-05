@@ -109,7 +109,7 @@ The sparseness of the R-band images can be attributed to the short exposure time
 |f814_field_with_full_cov_galaxies| |r062_field_with_full_cov_galaxies|
 
 *Difference image of a field in F-band, and another field in R-band, with full-coverage galaxies denoted with green circle regions.
-Sparseness of R-band image attribuatable to the exposure time difference between the two bands in the OU24 dataset -- 901.175s vs 116.025s for F184 and R062 respectively.*
+Sparseness of R-band image attributable to the exposure time difference between the two bands in the OU24 dataset -- 901.175s vs 116.025s for F184 and R062 respectively.*
 
 .. |f814_field_with_full_cov_galaxies| image:: /images/f184_field.png
    :width: 500
